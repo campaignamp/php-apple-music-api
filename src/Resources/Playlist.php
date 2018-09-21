@@ -89,8 +89,10 @@ class Playlist extends Resource
     public function relationships($data)
     {
         if (isset($data['curator'])) {
-            foreach ($data['albums']['data'] as $album) {
-                $this->curator[] = new Album($album);
+            if (isset($data['albums'])) {
+                foreach ($data['albums']['data'] as $album) {
+                    $this->curator[] = new Album($album);
+                }
             }
         }
 
