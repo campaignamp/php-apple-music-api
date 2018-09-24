@@ -60,6 +60,7 @@ abstract class Api
     public function setStorefront($storefront)
     {
         $this->storefront = $storefront;
+        return $this;
     }
 
     /**
@@ -76,6 +77,7 @@ abstract class Api
     public function setLocalization($localization)
     {
         $this->localization = $localization;
+        return $this;
     }
 
     /**
