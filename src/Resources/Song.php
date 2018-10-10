@@ -114,7 +114,7 @@ class Song extends Resource
         $this->artistName = $data['artistName'];
         $this->artwork = new Artwork($data['artwork']);
         $this->genreNames = $data['genreNames'];
-        $this->name = $data['genreNames'];
+        $this->name = $data['name'];
         $this->releaseDate = $data['releaseDate'];
         $this->trackNumber = $data['trackNumber'];
         $this->url = $data['url'];
